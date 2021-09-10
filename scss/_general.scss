@@ -1,0 +1,25 @@
+$dark-grey:#333333;
+$dark:#333333;
+$white-grey:#FFFFFF;
+$yellow:#E8C300;
+$grey:#E5E5E5;
+$dark0:#000000;
+$dark-cell:#333333;
+$white-white:#FFD600;
+$white:#fff;
+$white-opacity:rgba(255, 255, 255, 0.5);
+$mc:0 auto;
+$container:1200px;
+@mixin line {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 67px;
+    height: 5px;
+    background: $yellow;
+    border-radius: 50px;
+    margin: $mc;
+    margin-top: -97px;
+    margin-left: 187px;
+    margin-bottom: 55px;
+}

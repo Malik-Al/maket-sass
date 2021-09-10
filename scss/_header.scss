@@ -1,0 +1,140 @@
+      .people {
+          background-image: url(../img/header-bg.svg);
+          position: relative;
+          background-repeat: no-repeat;
+          background-position: 0 center;
+          background-size: cover;
+          margin: 0;
+          height: 800px;
+      }
+      
+      .people:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, .5);
+          z-index: 2;
+      }
+      
+      .header {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          z-index: 3;
+          color: #fff;
+      }
+      
+      .nav {
+          display: flex;
+          list-style-type: none;
+          padding-left: 0;
+          margin: 0;
+          &-item {
+              margin-left: 40px;
+              margin-right: 40px;
+              position: relative;
+              top: 40px;
+              width: 60px;
+              display: block;
+          }
+          &-link {
+              color: #fff;
+              text-decoration: none;
+              text-transform: uppercase;
+          }
+      }
+      
+      .logo {
+          position: relative;
+          top: 40px;
+      }
+      
+      .hungry {
+          position: relative;
+          z-index: 3;
+          color: #fff;
+          text-transform: uppercase;
+          margin-top: 250px;
+          text-align: center;
+          &-time-work {
+              display: flex;
+              position: absolute;
+              writing-mode: tb-rl;
+              transform: rotate(180deg);
+              font-size: 11px;
+          }
+          &-title {
+              font-weight: bold;
+              font-style: normal;
+              font-size: 12px;
+              line-height: 14px;
+              margin-bottom: 60px;
+          }
+          &-people {
+              font-size: 96px;
+              line-height: 0px;
+          }
+      }
+      
+      .btn {
+          margin-top: 100px;
+          a {
+              display: inline-block;
+              width: 200px;
+              height: 60px;
+              line-height: 60px;
+              color: $white;
+              border-radius: 5px;
+              font-size: 12px;
+              font-weight: 700;
+              transition: 0.3s;
+              text-transform: uppercase;
+              border: 1px solid $white-opacity;
+              margin: 0 20px 20px;
+              &:hover {
+                  background: $yellow;
+              }
+          }
+          &-order {
+              background: $yellow;
+              border: none;
+              &::after {
+                  @include line;
+              }
+              &:hover {
+                  background: darken($yellow, 20%);
+              }
+          }
+      }
+      
+      .socials {
+          position: absolute;
+          right: 0;
+          width: 62px;
+          a {
+              display: block;
+              height: 62px;
+              border-radius: 50%;
+              transition: 0.3s;
+              margin-bottom: 20px;
+              &:hover {
+                  background: $yellow;
+              }
+          }
+      }
+      
+      .down-btn {
+          text-align: center;
+          border-radius: 50%;
+          transition: 0.3s;
+          width: 62px;
+          height: 62px;
+          margin-top: 70px;
+          &:hover {
+              background: $yellow;
+          }
+      }
